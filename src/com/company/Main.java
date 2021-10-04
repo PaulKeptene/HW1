@@ -30,17 +30,24 @@ public class Main {
             } else if (HWnum == 1) {
                 T1 t1 = new T1();
                 t1.task1();
-            }/* else if (HWnum == 2) {
-                T2 t2 = new T2();
-                t2.task2();
-            }*/ else if (HWnum==3) {
+            } else if (HWnum == 2) {
+                System.out.println("ЗАДАНИЕ 2\n"+"Отобразить в окне консоли аргументы командной строки в обратном порядке");
+                System.out.print("Аргументы по порядку:");
+                for (String arg : args) {
+                    System.out.print(arg + " ");
+                }
+                System.out.print("\nАргументы в обратном порядке:");
+                for (int i = args.length-1; i >= 0; i--) {
+                    System.out.print(args[i] + " ");
+                }
+            } else if (HWnum == 3) {
                 T3 t3 = new T3();
                 t3.task3();
             } else if (HWnum == 4) {
                 T4 t4 = new T4();
                 t4.task4();
             }
-            System.out.println("\nЗадание "+HWnum+" просмотрено. Введите номер другого задания для проверки или введите 0 для выхода:");
+            System.out.print("\nЗадание " + HWnum + " просмотрено. Введите номер другого задания для проверки или введите 0 для выхода:");
         }
     }
 }
