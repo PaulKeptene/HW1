@@ -3,7 +3,7 @@ package com.company;
 import java.util.Scanner;
 
 public class T5 {
-    public void task5(String[] args) {
+    public void task5() {
         Scanner sc = new Scanner(System.in);
         System.out.println("ЗАДАНИЕ 5\n" + "Ввести целые числа как аргументы командной строки, подсчитать их суммы (произведения) и вывести результат на консоль");
         System.out.print("Введите аргумент 1:");

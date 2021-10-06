@@ -50,7 +50,7 @@ public class T6 {
         }
         System.out.print("\nВсе трехзначные числа, в десятичной записи которых нет одинаковых цифр:");
         for (int i = 0; i < n; i++) {
-            if ((m[i] < 1000)&(m[i]!=0)) {
+            if ((m[i] < 1000)&(m[i]!=0)&(m[i] > -1000)) {
                 int x = m[i] / 100;
                 int y = ((m[i] % 100) / 10);
                 int z = (m[i] % 10);
@@ -61,7 +61,7 @@ public class T6 {
         }
         System.out.print("\n«Счастливые» числа:");
         for (int i = 0; i < n; i++) {
-            String s = Integer.toString(m[i]);
+            String s = Integer.toString(m[i]*-1);
             String[] s1 = s.split("");
             if ((s.length() % 2 == 0)&(m[i]!=0)) {
                 int med = s.length() / 2;

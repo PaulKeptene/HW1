@@ -40,7 +40,7 @@ public class Main {
                 t4.task4();
             } else if (HWnum == 5) {
                 T5 t5 = new T5();
-                t5.task5(args);
+                t5.task5();
             } else if (HWnum == 6) {
                 T6 t6 = new T6();
                 t6.task6();
