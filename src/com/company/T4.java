@@ -9,6 +9,10 @@ public class T4 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Пароль образец для сравнения "+exmpl+"\nВведите свой пароль:");
         String pass = sc.nextLine();
-        System.out.println(exmpl.equals(pass));
+        if (exmpl.equals(pass)){
+            System.out.println("Пароль совпадает.");
+        } else {
+            System.out.println("Пароль не совпадает.");
+        }
     }
 }
